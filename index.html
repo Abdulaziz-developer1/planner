@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="planner-container">
+        <h1>Tasks for <span id="selectedDate"></span></h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="dateSwiper"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <p id="completionText"></p>
+        <input type="text" id="taskInput" placeholder="New task...">
+        <button id="addTask">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+</html>
